@@ -4,9 +4,49 @@
   <meta charset="UTF-8">
   <title>Sport Tickets</title>
   <style>
-body {
-    background-color: red;
- }
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: red;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .controls {
+            margin-top: 20px;
+            background: rgba(0,0,0,0.4);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Farbe ändern 🎨</h1>
+
+    <div class="controls">
+        <label>
+            Hintergrundfarbe:
+            <input type="color" onchange="document.body.style.backgroundColor = this.value">
+        </label>
+
+        <label>
+            Textfarbe:
+            <input type="color" onchange="document.body.style.color = this.value">
+        </label>
+    </div>
+
+</body>
+</html>
   </style>
 </head>
 <body>
