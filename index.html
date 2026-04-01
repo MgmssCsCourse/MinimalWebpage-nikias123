@@ -13,20 +13,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start; /* nach oben */
+            padding-top: 40px; /* Abstand nach oben */
             font-family: Arial, sans-serif;
         }
 
         .controls {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-
-    background: rgba(0,0,0,0.4);
-    padding: 6px;
-    border-radius: 6px;
-    font-size: 12px;
-}
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.4);
+            padding: 6px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
 
         label {
             display: block;
@@ -37,11 +37,12 @@
 
 <body>
     <!-- Hier kann man Fußballtickets kaufen -->
-    <!-- Man sieht eine Tabelle mit den aktuellen Spielen --›
-    <!-- Man kann nach unten scrollen und Auswählen was man kaufen will --›
+    <!-- Man sieht eine Tabelle mit den aktuellen Spielen -->
+    <!-- Man kann nach unten scrollen und auswählen -->
     <!-- Fertig -->
+
     <h1>Tickets von der ersten bis zur dritten Liga</h1>
-    <p>3. Ligen in einer Website, wer glaubt denn sowas!?</p>
+    <p>Drei Ligen in einer Website, wer glaubt denn sowas!?</p>
 
     <div class="controls">
         <label>
