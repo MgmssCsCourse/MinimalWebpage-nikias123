@@ -2,20 +2,19 @@
 <html lang="de">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fußball Tickets</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <style>
         body {
             margin: 0;
             height: 100vh;
-            background-color: red;
-            color: white;
+            background-color: #FFFFFF;
+            color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start; /* nach oben */
-            padding-top: 40px; /* Abstand nach oben */
+            justify-content: flex-start;
+            padding-top: 40px;
             font-family: Arial, sans-serif;
         }
 
@@ -33,18 +32,34 @@
             display: block;
             margin-bottom: 10px;
         }
+
+        /* 📌 Bilder-Container unten links */
+        .image-container {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            width: 150px;
+            height: 250px; /* sorgt für Scrollbar */
+            overflow-y: auto;
+            background: rgba(0,0,0,0.1);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .image-container img {
+            width: 100%;
+            margin-bottom: 10px;
+            display: block;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Hier kann man Fußballtickets kaufen -->
-    <!-- Bilder -->
-    <!-- Man kann nach unten scrollen und auswählen -->
-    <!-- Fertig -->
 
     <h1>Tickets von der ersten bis zur dritten Liga</h1>
     <p>Drei Ligen in einer Website, wer glaubt denn sowas!?</p>
 
+    <!-- 🎨 Controls -->
     <div class="controls">
         <label>
             Hintergrundfarbe:
@@ -58,6 +73,13 @@
                    onchange="document.body.style.color = this.value">
         </label>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- 🖼️ Bilder unten links -->
+    <div class="image-container">
+        <img src="/mnt/data/24C1A90E-0C4D-466E-AE2D-FDEFE8BFED64.png">
+        <img src="/mnt/data/24C1A90E-0C4D-466E-AE2D-FDEFE8BFED64.png">
+        <img src="/mnt/data/24C1A90E-0C4D-466E-AE2D-FDEFE8BFED64.png">
+    </div>
+
 </body>
 </html>
