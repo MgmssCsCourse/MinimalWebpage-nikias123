@@ -33,23 +33,19 @@
             margin-bottom: 10px;
         }
 
-        /* 📌 Bilder-Container unten links */
-        .image-container {
+        /* ⚽ Logo-Bereich unten links */
+        .logo-container {
             position: fixed;
             bottom: 10px;
             left: 10px;
-            width: 150px;
-            height: 250px; /* sorgt für Scrollbar */
-            overflow-y: auto;
-            background: rgba(0,0,0,0.1);
-            padding: 5px;
-            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        .image-container img {
-            width: 100%;
-            margin-bottom: 10px;
-            display: block;
+        .logo-container img {
+            width: 120px; /* Größe der Logos */
+            height: auto;
         }
     </style>
 </head>
@@ -59,7 +55,6 @@
     <h1>Tickets von der ersten bis zur dritten Liga</h1>
     <p>Drei Ligen in einer Website, wer glaubt denn sowas!?</p>
 
-    <!-- 🎨 Controls -->
     <div class="controls">
         <label>
             Hintergrundfarbe:
@@ -74,11 +69,11 @@
         </label>
     </div>
 
-    <!-- 🖼️ Bilder unten links -->
-    <div class="image-container">
-        <img src="/mnt/data/24C1A90E-0C4D-466E-AE2D-FDEFE8BFED64.png">
-        <img src="/mnt/data/24C1A90E-0C4D-466E-AE2D-FDEFE8BFED64.png">
-        <img src="/mnt/data/24C1A90E-0C4D-466E-AE2D-FDEFE8BFED64.png">
+    <!-- ⚽ Logos unten links -->
+    <div class="logo-container">
+        <img src="eintracht-frankfurt.png" alt="Eintracht Frankfurt">
+        <img src="fortuna-duesseldorf.png" alt="Fortuna Düsseldorf">
+        <img src="fc-saarbruecken.png" alt="FC Saarbrücken">
     </div>
 
 </body>
